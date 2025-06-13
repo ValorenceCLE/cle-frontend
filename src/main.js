@@ -29,7 +29,8 @@ app.use(PrimeVue, {
 });
 
 // (Optional) If you plan to use PrimeIcons for icons:
-import 'primeicons/primeicons.css';  // PrimeVue icons (e.g., for Button icons)
+import 'primeflex/primeflex.css';
+import 'primeicons/primeicons.css';
 
 // Mount the app
 app.mount('#app');

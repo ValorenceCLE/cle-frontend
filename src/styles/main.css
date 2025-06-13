@@ -1,10 +1,11 @@
-/* Import Tailwind CSS framework layers (includes preflight resets) */
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* PrimeVue's base styles:
    (PrimeVue v4 styled mode generates component styles from the theme preset.
     If any global resets or core CSS are needed, import them here.
-    In PrimeVue 4+, primevue.min.css is deprecated:contentReference[oaicite:11]{index=11}, so this may not be required.) */
+    In PrimeVue 4+, primevue.min.css is deprecated, so this may not be required.) */
 
 /* Optionally, import additional CSS libraries or fonts here. 
    For example, PrimeFlex (if using utility classes from PrimeFaces), etc. 
