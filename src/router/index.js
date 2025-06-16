@@ -4,9 +4,10 @@ import { createRouter, createWebHistory } from 'vue-router';
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import('@/components/Home.vue'), // Make sure this file exists or update the path
+    name: 'Login',
+    component: () => import('@/views/LoginView.vue'),
   },
+  // Removed the /login route for now
 ];
 
 const router = createRouter({

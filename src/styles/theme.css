@@ -4,9 +4,20 @@ html {
     color: #333;
     /* default text color for light mode */
     background-image:
-        repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(0, 0, 0, 0.05) 5px, rgba(0, 0, 0, 0.05) 10px),
-        repeating-linear-gradient(135deg, transparent, transparent 5px, rgba(0, 0, 0, 0.05) 5px, rgba(0, 0, 0, 0.05) 10px);
-    background-size: 10px 10px;
+        repeating-linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.015) 0px,
+            rgba(0, 0, 0, 0.015) 1px,
+            transparent 1px,
+            transparent 12px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(0, 0, 0, 0.015) 0px,
+            rgba(0, 0, 0, 0.015) 1px,
+            transparent 1px,
+            transparent 12px
+        );
 }
 
 /* Dark theme background (when .p-dark is toggled on <html>) */
@@ -15,7 +26,18 @@ html.p-dark {
     color: #e0e0e0;
     /* lighter text for dark mode */
     background-image:
-        repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255, 255, 255, 0.10) 5px, rgba(255, 255, 255, 0.10) 10px),
-        repeating-linear-gradient(135deg, transparent, transparent 5px, rgba(255, 255, 255, 0.10) 5px, rgba(255, 255, 255, 0.10) 10px);
-    background-size: 10px 10px;
+        repeating-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.02) 0px,
+            rgba(255, 255, 255, 0.02) 1px,
+            transparent 1px,
+            transparent 12px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(255, 255, 255, 0.02) 0px,
+            rgba(255, 255, 255, 0.02) 1px,
+            transparent 1px,
+            transparent 12px
+        );
 }
