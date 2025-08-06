@@ -9,8 +9,7 @@ import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura'; // Using a PrimeVue preset theme (e.g., Aura)
 
 // Global styles
-import '@/styles/main.css';   // Tailwind base styles and PrimeVue core CSS
-import '@/styles/theme.css';  // Custom theme overrides (crosshatch backgrounds, etc.)
+import '@/styles/main.css';   // Crosshatch Backgrounds, Tailwind base styles and PrimeVue core CSS
 
 const app = createApp(App);
 
@@ -21,9 +20,9 @@ app.use(createPinia());
 // Configure PrimeVue with styled theme and dark-mode support
 app.use(PrimeVue, { 
     theme: {
-        preset: Aura,                      // PrimeVue preset theme (includes light & dark modes):contentReference[oaicite:0]{index=0}
+        preset: Aura,                      
         options: {
-            darkModeSelector: '.p-dark'    // Use .p-dark class to toggle dark mode manually:contentReference[oaicite:1]{index=1}
+            darkModeSelector: '.p-dark'
         }
     }
 });

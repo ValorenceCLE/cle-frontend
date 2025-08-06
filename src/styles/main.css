@@ -10,3 +10,49 @@
 /* Optionally, import additional CSS libraries or fonts here. 
    For example, PrimeFlex (if using utility classes from PrimeFaces), etc. 
    For a minimal setup, this section can remain empty. */
+
+
+
+/* Light theme background (default) */
+html {
+    background-color: #f5f5f5;
+    color: #333;
+    /* default text color for light mode */
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.015) 0px,
+            rgba(0, 0, 0, 0.015) 1px,
+            transparent 1px,
+            transparent 12px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(0, 0, 0, 0.015) 0px,
+            rgba(0, 0, 0, 0.015) 1px,
+            transparent 1px,
+            transparent 12px
+        );
+}
+
+/* Dark theme background (when .p-dark is toggled on <html>) */
+html.p-dark {
+    background-color: #121212;
+    color: #e0e0e0;
+    /* lighter text for dark mode */
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.02) 0px,
+            rgba(255, 255, 255, 0.02) 1px,
+            transparent 1px,
+            transparent 12px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba(255, 255, 255, 0.02) 0px,
+            rgba(255, 255, 255, 0.02) 1px,
+            transparent 1px,
+            transparent 12px
+        );
+}
